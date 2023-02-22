@@ -1,19 +1,23 @@
 Hi, HtN folks! I had fun building this out, albeit it was rushed.
 Skipped sleep to complete this today (22nd Feb, 2023) 😅
 There are many things I would like to consider implementing but I am strapped for time.
-So I'm happy with the current iteration of schedule app I built with some toy validations.
+So I'm happy with the current iteration of the schedule app I built with some toy validations.
+
+Here's a sneak peak:
+![image](https://user-images.githubusercontent.com/52707659/220789176-8b06119e-bc08-4778-9283-0c53ce5deda6.png)
+
 
 The validation code is: `123456`
-Pretty secure and safe, eh? 😼
+Pretty safe and secure, eh? 😼
 
 Jokes aside, I am going to list out some of the gripes I have with my current iteration and also things I would do to make it better.
 First and foremost, due to shortage of time, I could not make a proper folder structure. It looks messy and I would really like to improve it.
-Unfortunately, I am very tired at the time of speaking and very sleep deprived.
+Unfortunately, I am very tired at the time of writing and very sleep deprived.
 I do not find VSCode's automated file imports to be trustworthy enough to not break this app, so this is something I would improve upon if I had more time.
 
 I made my best effort in my sleep deprived state to make the components modular with separation of concerns.
 I am not happy with some components like the `EventType` and `EventTypePicker` where I feel the code is repeated.
-I feel that can be improved and could be made more elegantly.
+I feel that can be improved and could be made more elegant.
 
 I was not sure to go strictly with styled-components or separate css modules.
 This really depends on the team's best practices - I don't have much preference for this;
@@ -21,19 +25,26 @@ I'd go with the team's best practices if I'm working with them.
 This thought of mine applies to team's coding standards and use of internal custom component library as well.
 
 I did a very whacky job with the filter system, didn't I?
-Initially I did not have any idea what I was doing and I was scared of mutating state, which is an absolute NO NO in React since
-mutations cause unexpected behaviour, which I unsurprisingly faced when I noticed the event tag background colors were not working correctly, both in the main even schedule list and also within the modal.
-I pieced together my thoughts and logic after a cup of super early morning coffee at 4am today morning, and voila, I made it work...I think? [Coffee === BigBrainMoment ? 🧠 : 🤯]
+Initially I did not have any idea what I was doing and I was scared of mutating state, which is an absolute NO NO 🙅⛔ in React since
+mutations cause unexpected behaviours, which I unsurprisingly faced when I noticed the event tag background colors were not working correctly, both in the main even schedule list and also within the modal.
+I pieced together my thoughts and logic after a cup of coffee ☕ super early in the morning at 4am today, and voila, I made it work...I think? 
+`[Coffee === BigBrainMoment ? 🧠 : 🤯]`
+I realized I use a lot of emojis, don't I? 🤔💭
+I definitely used a lot in this web app, haha.
+Guess it's a fun way to be expressive through text 😼
 
-On to the second challenge, modals. This was tough.
+On to the second challenge, modals. This was tough...yeah this was pretty tough. Moving on.
 
-On to the third challenge, which had been my biggest hurdle, the design of the app itself.
-I have come to appreciate even more about the fact of having designers in my teams when I previously worked at my past internships.
-Any folks who happen to be reading this and also happen to be involved with designing products, you folks are absolutely amazing.
+The third challenge, which had been my biggest hurdle, was the design of the app itself.
+I have come to appreciate even more about the fact of having designers in my teams when I previously worked in my past internships.
+Any folks who happen to be reading this and also happen to be involved with designing products, you folks are absolutely amazing. 😎
 
-On to the fourth challenge - I wanted to go the extra mile by adding in sparkles, inspired by Josh Comeau's work.
-That messed up with the modal it seems, where the event name flows into the modal show casing related events.
+On to the fourth challenge - I wanted to take the extra mile by adding in sparkles ✨, inspired by Josh Comeau's work.
+That messed things up a little with the modal it seems, where the event name flows into the modal where it is show casing related events.
 I am short on time so I couldn't come up with a fix. 🥲
+Here's what it looks like:
+![image](https://user-images.githubusercontent.com/52707659/220789386-baddc691-bee1-419a-a6db-5151f00517f6.png)
+
 
 And I end my note here. Thank you.
 
