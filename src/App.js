@@ -17,23 +17,30 @@ function App() {
   const [isAuthorized, setIsAuthorized] = useState(false);
   const [eventType, setEventType] = useState("");
   const [isAsc, setIsAsc] = useState(true);
+
+  // json data is stored in the htn state variable
   const [htn, setHtn] = useState(null);
 
-  const availableEvents =
-    // for unauthorized public users
-    !isAuthorized && !eventType
-      ? htn?.filter((event) => event.permission === "public")
-      : // for unauthorized public users who picked an event type
-      !isAuthorized && eventType
-      ? htn?.filter(
-          (event) =>
-            event.permission === "public" && event.event_type === eventType
-        )
-      : // for authorized users who picked an event type
-      isAuthorized && eventType
-      ? htn?.filter((event) => event.event_type === eventType)
-      : // for authorized users
-        htn;
+  // unauthorized public users
+  const unAuthorizedPublicUsers = !isAuthorized && !eventType;
+
+  // unauthorized public users who picked an event type
+  const pickyUnAuthorizedPublicUsers = !isAuthorized && eventType;
+
+  // authorized users who picked an event type
+  const pickyAuthorizedUsers = isAuthorized && eventType;
+
+  const availableEvents = unAuthorizedPublicUsers
+    ? htn?.filter((event) => event.permission === "public")
+    : pickyUnAuthorizedPublicUsers
+    ? htn?.filter(
+        (event) =>
+          event.permission === "public" && event.event_type === eventType
+      )
+    : pickyAuthorizedUsers
+    ? htn?.filter((event) => event.event_type === eventType)
+    : // for authorized users
+      htn;
 
   useEffect(() => {
     axios.get(HTNENDPOINT).then((res) => setHtn(res.data));

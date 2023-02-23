@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 
+// reused Josh Comeau's logic and components/utils to implement sparkles ✨
 const QUERY = "(prefers-reduced-motion: no-preference)";
 const isRenderingOnServer = typeof window === "undefined";
 const getInitialState = () => {

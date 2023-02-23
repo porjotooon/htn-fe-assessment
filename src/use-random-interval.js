@@ -1,4 +1,7 @@
 import React, { useEffect, useRef, useCallback } from "react";
+
+// reused Josh Comeau's logic and components/utils to implement sparkles ✨
+
 // Utility helper for random number generation
 const random = (min, max) => Math.floor(Math.random() * (max - min)) + min;
 const useRandomInterval = (callback, minDelay, maxDelay) => {

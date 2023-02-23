@@ -20,12 +20,14 @@ I feel that can be improved and could be made more elegant.
 
 I was not sure to go strictly with styled-components or separate css modules.
 This really depends on the team's best practices - I don't have much preference for this;
-I'd go with the team's best practices if I'm working with them.
-This thought of mine applies to team's coding standards and use of internal custom component library as well.
+I'd go with the team's best practices if I'm working with them. This thought of mine applies to team's coding standards and use of internal custom component library as well.
+<br>
+I also added some inline styling which is frowned upon - I am a not big fan of it either since it is not consistent;
+I added those inline style to solve the styling issues I faced - if I had more time, would've implemented it differently.
 
 I did a very whacky job with the filter system, didn't I?
 Initially I did not have any idea what I was doing and I was scared of mutating state, which is an absolute NO NO 🙅⛔ in React since
-mutations cause unexpected behaviours, which I unsurprisingly faced when I noticed the event tag background colors were not working correctly, both in the main even schedule list and also within the modal.
+mutations cause unexpected behaviours, which I unsurprisingly faced when I noticed background colors of the event type tags were not working correctly, both in the main even schedule list and also within the modal.
 I pieced together my thoughts and logic after a cup of coffee ☕ super early in the morning at 4am today, and voila, I made it work...I think?
 `[Coffee === BigBrainMoment ? 🧠 : 🤯]`
 I realized I use a lot of emojis, don't I? 🤔💭
@@ -38,7 +40,7 @@ The third challenge, which had been my biggest hurdle, was the design of the app
 I have come to appreciate even more about the fact of having designers in my teams when I previously worked in my past internships.
 Any folks who happen to be reading this and also happen to be involved with designing products, you folks are absolutely amazing. 😎
 
-On to the fourth challenge - I wanted to take the extra mile by adding in sparkles ✨, inspired by Josh Comeau's work.
+On to the fourth challenge - I wanted to go the extra mile by adding in sparkles ✨ on the event name, inspired by Josh Comeau's work.
 I reused a lot of the components and util functions, namely: `use-prefers-reduced-motion`, `use-random-interval`, `Sparkles`, and logic he had used to implement this nifty cool feature.
 I initially thought it woudn't require many additional changes - I was pretty wrong in thinking that...too late to go back now 😵‍💫
 That messed things up a little with the modal it seems, where the event name flows into the modal where it is show casing related events.

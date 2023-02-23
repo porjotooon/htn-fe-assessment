@@ -1,6 +1,6 @@
 import React from "react";
 
-// This component returns event type tages
+// This component returns event type tags
 const EventType = ({ eventType }) => {
   let eventColor = "";
 

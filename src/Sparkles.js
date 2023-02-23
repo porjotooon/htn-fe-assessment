@@ -1,7 +1,11 @@
 import React, { useState } from "react";
+import styled, { keyframes } from "styled-components";
+
+// reused Josh Comeau's logic and components/utils to implement sparkles ✨
+
+// util
 import usePrefersReducedMotion from "./use-prefers-reduced-motion";
 import useRandomInterval from "./use-random-interval";
-import styled, { keyframes } from "styled-components";
 
 const DEFAULT_COLOR = "#FFC700";
 
@@ -31,6 +35,7 @@ const generateSparkle = (color) => {
   };
   return sparkle;
 };
+
 const Sparkles = ({ color = DEFAULT_COLOR, children, ...delegated }) => {
   const [sparkles, setSparkles] = useState(() => {
     return range(3).map(() => generateSparkle(color));
@@ -64,6 +69,7 @@ const Sparkles = ({ color = DEFAULT_COLOR, children, ...delegated }) => {
     </Wrapper>
   );
 };
+
 const Sparkle = ({ size, color, style }) => {
   const path =
     "M26.5 25.5C19.0043 33.3697 0 34 0 34C0 34 19.1013 35.3684 26.5 43.5C33.234 50.901 34 68 34 68C34 68 36.9884 50.7065 44.5 43.5C51.6431 36.647 68 34 68 34C68 34 51.6947 32.0939 44.5 25.5C36.5605 18.2235 34 0 34 0C34 0 33.6591 17.9837 26.5 25.5Z";
@@ -75,6 +81,7 @@ const Sparkle = ({ size, color, style }) => {
     </SparkleWrapper>
   );
 };
+
 const comeInOut = keyframes`
   0% {
     transform: scale(0);
@@ -116,4 +123,5 @@ const ChildWrapper = styled.strong`
   z-index: 1;
   font-weight: bold;
 `;
+
 export default Sparkles;
