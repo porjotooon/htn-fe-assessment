@@ -3,10 +3,22 @@ Skipped sleep to complete this today (22nd Feb, 2023) 😅
 There are many things I would like to consider implementing but I am strapped for time.
 So I'm happy with the current iteration of the schedule app I built with some toy validations.
 
-Here's a sneak peak:
+Here's a sneak peak -
+<br>
+POV of unauthorized user:
+
 ![image](https://user-images.githubusercontent.com/52707659/220789176-8b06119e-bc08-4778-9283-0c53ce5deda6.png)
 
-The validation code is: `123456`
+<br>
+<br>
+POV of authorized user:
+
+![image](https://user-images.githubusercontent.com/52707659/220792323-752c5837-6869-489f-9403-a5955da8ef93.png)
+
+<br>
+<br>
+The validation code is: 123456
+<br>
 Pretty safe and secure, eh? 😼
 
 Jokes aside, I am going to list out some of the gripes I have with my current iteration and also things I would do to make it better.
