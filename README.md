@@ -67,6 +67,29 @@ I also thought about implementing authentication but again, I'm short on time sa
 <br>
 I tried my best to address accessibility issues, I am still learning a lot about accessibility and I feel there is lot of room for growth for myself.
 
+<h2>
+My response for part 2 questions:
+</h2>
+I drew a rough sketch of what I wanted to build. Here's what my sketch looks like:
+
+![image](https://user-images.githubusercontent.com/52707659/220798774-173eac81-a989-4081-a1a4-14755190168e.png)
+
+The first thought I had in mind is essentially try to fit in all the info I'm getting from the endpoint into a card component for each listed event.
+I like minimalistic desgins with a flair of cuteness sprinkled generously over - while I can't say for sure if everyone would agree with me on this, but I think I did somewhat achieve what I was trying to aim for.
+I struggled quite a bit to come up with this sketch - clearly shows how much reliant I am on designers to come up with designs.
+I took some inspiration from https://my.hackthenorth.com/schedule, where I essentially took the idea of adding in colors for each event type.
+I also added some emojis to give them some character depth.
+I love React Hooks, so it was my definite tool of choice to go with for building this.
+
+I encountered many problems while building this - filtering issues, unintended state mutations, sparkles issue which made event names overflow into the modal (something which I couldn't solve 😓) - I had to take a break and figure out what I was doing wrong and piece together a working solution to get what I was trying to achieve.
+There are some tradeoffs for the hacky solution I came up with: I don't think my filtering solution is performant so I think it would scale poorly had there been hundreds or more events.
+
+Collectively, I am proud of being able to put out a cute schedule event list web app.
+
+<br>
+With additional time, I might've tinkered with Next.js and added authentication and come up with better & performant filtering logic.
+I would also add loading animations to make it look cool.
+
 And I end my note here. Thank you.
 
 To run this locally, first install the npm packages
