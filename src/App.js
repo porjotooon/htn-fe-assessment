@@ -100,6 +100,7 @@ function App() {
                   return second.start_time - first.start_time;
                 }
               })
+              // used for filtering through searchTerm input
               .filter((result) =>
                 result.name.toLowerCase().includes(searchTerm)
               )

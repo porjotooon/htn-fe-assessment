@@ -60,6 +60,13 @@ I am short on time so I couldn't come up with a fix. 🥲
 Here's what it looks like:
 ![image](https://user-images.githubusercontent.com/52707659/220789386-baddc691-bee1-419a-a6db-5151f00517f6.png)
 
+<br>
+I wanted to make the order by date state persist by using `localStorage` but unfortunately, I am short on time. So apologies there.
+<br>
+I also thought about implementing authentication but again, I'm short on time sadly.
+<br>
+I tried my best to address accessibility issues, I am still learning a lot about accessibility and I feel there is lot of room for growth for myself.
+
 And I end my note here. Thank you.
 
 To run this locally, first install the npm packages
