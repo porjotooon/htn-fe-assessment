@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import usePrefersReducedMotion from "./use-prefers-reduced-motion";
 import useRandomInterval from "./use-random-interval";
 import styled, { keyframes } from "styled-components";
@@ -32,7 +32,7 @@ const generateSparkle = (color) => {
   return sparkle;
 };
 const Sparkles = ({ color = DEFAULT_COLOR, children, ...delegated }) => {
-  const [sparkles, setSparkles] = React.useState(() => {
+  const [sparkles, setSparkles] = useState(() => {
     return range(3).map(() => generateSparkle(color));
   });
   const prefersReducedMotion = usePrefersReducedMotion();
