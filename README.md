@@ -6,7 +6,6 @@ So I'm happy with the current iteration of the schedule app I built with some to
 Here's a sneak peak:
 ![image](https://user-images.githubusercontent.com/52707659/220789176-8b06119e-bc08-4778-9283-0c53ce5deda6.png)
 
-
 The validation code is: `123456`
 Pretty safe and secure, eh? 😼
 
@@ -27,7 +26,7 @@ This thought of mine applies to team's coding standards and use of internal cust
 I did a very whacky job with the filter system, didn't I?
 Initially I did not have any idea what I was doing and I was scared of mutating state, which is an absolute NO NO 🙅⛔ in React since
 mutations cause unexpected behaviours, which I unsurprisingly faced when I noticed the event tag background colors were not working correctly, both in the main even schedule list and also within the modal.
-I pieced together my thoughts and logic after a cup of coffee ☕ super early in the morning at 4am today, and voila, I made it work...I think? 
+I pieced together my thoughts and logic after a cup of coffee ☕ super early in the morning at 4am today, and voila, I made it work...I think?
 `[Coffee === BigBrainMoment ? 🧠 : 🤯]`
 I realized I use a lot of emojis, don't I? 🤔💭
 I definitely used a lot in this web app, haha.
@@ -40,11 +39,12 @@ I have come to appreciate even more about the fact of having designers in my tea
 Any folks who happen to be reading this and also happen to be involved with designing products, you folks are absolutely amazing. 😎
 
 On to the fourth challenge - I wanted to take the extra mile by adding in sparkles ✨, inspired by Josh Comeau's work.
+I reused a lot of the components and util functions, namely: `use-prefers-reduced-motion`, `use-random-interval`, `Sparkles`, and logic he had used to implement this nifty cool feature.
+I initially thought it woudn't require many additional changes - I was pretty wrong in thinking that...too late to go back now 😵‍💫
 That messed things up a little with the modal it seems, where the event name flows into the modal where it is show casing related events.
 I am short on time so I couldn't come up with a fix. 🥲
 Here's what it looks like:
 ![image](https://user-images.githubusercontent.com/52707659/220789386-baddc691-bee1-419a-a6db-5151f00517f6.png)
-
 
 And I end my note here. Thank you.
 
